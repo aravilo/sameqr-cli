@@ -1,0 +1,41 @@
+{
+  "name": "sameqr",
+  "version": "0.1.0",
+  "description": "Same-QR from the command line: dynamic QR codes, hosted pages and menus — for you, your scripts and your coding agent.",
+  "keywords": [
+    "qr",
+    "qr-code",
+    "dynamic-qr",
+    "cli",
+    "mcp",
+    "sameqr",
+    "menu",
+    "restaurant",
+    "api",
+    "claude",
+    "chatgpt"
+  ],
+  "homepage": "https://sameqr.com/entwickler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aravilo/sameqr-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/aravilo/sameqr-cli/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "sameqr": "bin/sameqr.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "ARAVILO (https://sameqr.com)"
+}

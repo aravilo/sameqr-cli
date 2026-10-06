@@ -1,0 +1,26 @@
+# Veroeffentlicht eine neue Version auf npm, sobald ein Release angelegt wird
+# (Tag v0.1.2 usw.). Ohne Token: npm vertraut diesem Workflow per OIDC
+# ("Trusted Publishing"), und jedes Paket bekommt einen Herkunftsnachweis.
+name: Publish to npm
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - name: Version passt zum Tag
+        run: test "v$(node -p "require('./package.json').version")" = "${GITHUB_REF_NAME}"
+      - run: node bin/sameqr.js --help > /dev/null
+      - run: npm publish --access public
