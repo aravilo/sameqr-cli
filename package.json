@@ -1,6 +1,6 @@
 {
   "name": "sameqr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Same-QR from the command line: dynamic QR codes, hosted pages and menus — for you, your scripts and your coding agent.",
   "keywords": [
     "qr",

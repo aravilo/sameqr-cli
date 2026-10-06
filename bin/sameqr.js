@@ -13,7 +13,7 @@ import { ersetzeSteuerzeichen } from '../lib/steuerzeichen.js'
 // (in JSON-Zeichenketten stehen sie ohnehin schon als \n und \t).
 
 
-const VERSION = '0.1.0'
+const VERSION = '0.1.1'
 
 // --- Argumente ---------------------------------------------------------------
 // Bewusst schlicht: --name wert, --name=wert, Schalter ohne Wert, Wiederholung
